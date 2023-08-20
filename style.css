@@ -10,6 +10,18 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+@media screen and (max-width: 376px) {
+  .topText {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .topText {
+    font-size: larger;
+  }
+}
+
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 40px;
@@ -31,7 +43,6 @@ body {
   text-align: center;
   font-weight: 700;
   color: hsl(218, 44%, 22%);
-  font-size: larger;
 }
 
 .bottomText {
