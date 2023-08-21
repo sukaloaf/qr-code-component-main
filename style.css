@@ -1,30 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   background-color: hsl(212, 45%, 89%);
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
-  min-width: 375px;
-  height: 100vh;
-  margin: 0;
+  height: 100%;
   font-family: "Outfit", sans-serif;
-}
-
-@media screen and (max-width: 376px) {
-  .topText {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .topText {
-    font-size: larger;
-  }
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 40px;
+  margin-top: 3em;
 }
 
 .qrCode {
@@ -33,7 +25,7 @@ body {
 }
 
 .qrCode img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin-top: 20px;
   border-radius: 25px;
@@ -41,14 +33,33 @@ body {
 
 .topText {
   text-align: center;
+  font-size: 20px;
   font-weight: 700;
   color: hsl(218, 44%, 22%);
+  margin-top: 15px;
 }
 
 .bottomText {
   text-align: center;
-  font-size: larger;
+  font-size: 24px;
   font-weight: 400;
   color: hsl(220, 15%, 55%);
   padding-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 50%;
+    margin-top: 12em;
+  }
+
+  .topText {
+    font-size: 12px;
+  }
+
+  .bottomText {
+    font-size: 16px;
+  }
 }
